@@ -1,7 +1,6 @@
----
 title: ES6 methods
+date: 2017-11-16 23:08:32
 ---
-
 I would like to learn more ES6 features, and therefore I will post my findings here. It's just for fun and for my self to lookup.
 
 # Quick into
@@ -83,3 +82,7 @@ var house2 = {
 deconstruc(house);
 deconstruc(house2);
 ```
+## The spread operator
+
+this is good-- but ill write later
+
