@@ -4,8 +4,6 @@ tags: []
 categories: []
 date: 2017-11-19 13:30:00
 ---
-## Quokka
-
 I just fell over this extension to VS Code. The extension lets you "live" code with all the output and return values being printed. The is super awesome for prototyping or refactoring, as you can immediatly see if you solution returns what you expect.
 
 Example
