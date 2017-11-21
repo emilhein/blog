@@ -1,10 +1,12 @@
 title: AWS SSM Documents
 author: Emil Hein
-date: 2017-02-27 21:44:13
 tags:
+  - 'AWS, ami, ssm'
+categories: []
+date: 2017-02-27 21:44:00
 ---
 # SSM
-Simple Server management. This is a feature offered by AWS that allows you to send commands to your instances to update them or install software. This feature can be used in a variety of usecases. Updating already running instances, installing missing software, etc. I personally have used it in relation to creating custom AMIs that will bootstrap a certain base AMI and install whatever i want for my future AMIs. When the instance is installed i create a new AMI with updated features, updates, programs, settings etc. 
+Simple Server management. This is a feature offered by AWS that allows you to send commands to your instances to update them or install software. This feature can be used in a variety of usecases. Updating already running instances, installing missing software, etc. I have used these documents to creating custom AMIs that will bootstrap a certain base AMI and install whatever i want for my future AMIs. When the instance is installed i create a new AMI with updated features, updates, programs, settings etc. 
 
 ## Automation structures
 The feature iv'e been looking mostly into is the automation document. This document is a JSON fil that describes how a certain flow will look like. When started, the document will automating each step in the flow.
