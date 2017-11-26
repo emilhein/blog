@@ -1,4 +1,4 @@
-title: Compoisition
+title: Composition
 author: Emil Hein
 date: 2017-11-23 18:02:00
 tags:
