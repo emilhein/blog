@@ -31,7 +31,9 @@ const factoryMethods = state => ({
         state.name = name
     }
 });
-```
 
-Which with Quokka, could give you this
-![Quokka showing you](/images/factory.png)
+let myOwnFactory = factory('Brewery')
+console.log(myOwnFactory.getFactoryName()); // Brewery
+myOwnFactory.setFactoryName('Pet store')
+console.log(myOwnFactory.getFactoryName()); // Pet store
+```
