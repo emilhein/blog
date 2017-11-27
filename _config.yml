@@ -4,8 +4,8 @@
 
 # Site
 title: My Hexo Blog
-subtitle:
-description:
+subtitle: This is just some thoughts i write down.
+description: I have no deeper connection or meaning with the material i publish here
 author: Emil Hein
 language:
 timezone:
@@ -38,7 +38,7 @@ post_asset_folder: true
 relative_link: false
 future: true
 highlight:
-  enable: true
+  enable: false
   line_number: true
   auto_detect: false
   tab_replace:
@@ -61,7 +61,11 @@ per_page: 10
 pagination_dir: page
 
 # Extensions
-## Plugins: https://hexo.io/plugins/
+# Plugins: #https://hexo.io/plugins/
+prism_plugin:
+  mode: 'preprocess'    # realtime/preprocess
+  theme: 'xonokai'
+  line_number: false    # default false
 ## Themes: https://hexo.io/themes/
 theme: cactus-dark
 customize:
