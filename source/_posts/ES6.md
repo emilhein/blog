@@ -59,12 +59,9 @@ console.log(Animal);    // -> Rhino
 This is awesome for handling optional values to a method
 ```javascript
 // default values in the method signature and descrructuring
-function deconstruc({
-    size,
-    price,
-    address = "unknown"
-}) {
-    console.log('your house is: ' + size  +' squarefeet, costs: ' + price +' and the address is ' + address);
+// default values in the method signature and descrructuring
+const deconstruc = ({land,size, price, address = "unknown"}) => {
+    return `your house is: ${size} squarefeet, costs: ${price} and the address is ${address}`
 }
 
 var house = {
@@ -79,10 +76,24 @@ var house2 = {
     'price': 1250000
 
 };
-deconstruc(house);
-deconstruc(house2);
+let house1Deconstruction = deconstruc(house);
+let house2Deconstruction = deconstruc(house2);
+
+console.log(house1Deconstruction); // Your house is: 123 squarefeet, costs: 1250000 and the address is Fifth avenue 2
+console.log(house2Deconstruction); // Your house is: 123 squarefeet, costs: 1250000 and the address is unknown
 ```
-## The spread operator
+## The spread or rest operator
 
-this is good-- but ill write later
+These two new function are super cool opposites, that can be used in many way. Let me example: 
 
+```javascript
+let arrayOfValues = [1,2,3,4, 'five', 'six', {seven: 'eigth'}]
+
+const restFunction = (...rest) => { // this is the rest 
+    //as the rest is used, its an array for all parameters
+    rest.map(value => console.log(`___ ${value}`))
+}
+restFunction('monkey')
+restFunction(-2,-1,0)
+restFunction(...arrayOfValues) // This is the spread
+```
