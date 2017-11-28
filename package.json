@@ -7,7 +7,7 @@
     "deploy": "hexo clean && hexo generate -d"
   },
   "hexo": {
-    "version": "3.4.1"
+    "version": "3.2.0"
   },
   "dependencies": {
     "hexo": "^3.2.0",
@@ -22,5 +22,8 @@
     "hexo-renderer-marked": "^0.2.10",
     "hexo-renderer-stylus": "^0.3.1",
     "hexo-server": "^0.2.0"
+  },
+  "devDependencies": {
+    "handlebars": "^4.0.11"
   }
 }
