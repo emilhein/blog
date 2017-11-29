@@ -1,0 +1,12 @@
+[
+    {
+       "name":"Hexo",
+       "url":"https://github.com/emilhein/blog",
+       "desc":"The framework and project for building this site"
+    },
+    {
+       "name":"Docker stuff",
+       "url":"https://github.com/emilhein/docker-start",
+       "desc":"My test and playground with docker"
+    }
+]
