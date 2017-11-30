@@ -27,9 +27,14 @@ const someFunctions = state => ({
 })
 
 let construct = {
-    name: 'Emil',
+    name: 'Joe',
     age: 25,
-    template: `My name is {{name}}. I am a {{age}} -- and this is second {{name}} time is here`,
+    comments: [1,2,4,5,6],
+    template: `My name is {{name}}. I am a {{age}}
+     {{#each comments}}        
+      -->  {{this}}
+     {{/each}}
+     `,
     compiled: null
 }
 let newTestModel = Model(construct)
