@@ -10,4 +10,6 @@ before_script:
 - git config --global user.email "emilhein1@gmail.com"
 - sed -i "s/GH_TOKEN/${GH_TOKEN}/" _config.yml
 script:
-- npm run deploy
+- hexo clean
+- hexo g
+- hexo d
