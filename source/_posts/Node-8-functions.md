@@ -21,7 +21,7 @@ const isPositive = (number, callback) => {
 }
 const isPositivePromise = promisify(isPositive);
 
-isPositivePromise(33) /*?.*/
+isPositivePromise(33) 
     .then(ans => isPositivePromise(ans*-1))
     .then(no => console.log('should not be here'))
     .catch(err => {
