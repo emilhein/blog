@@ -1,14 +1,13 @@
 language: node_js
 node_js:
-  - "6"
+- stable
 branches:
   only:
   - master
-before_install:
-- npm install
+install: npm install
 before_script:
-- git config --global user.name 'Emil Hein via Travis Ci'
-- git config --global user.email 'emilhein1@gmail.com'
-- sed -i'' "s~git@github.com:emilhein/blog.git~https://${GH_TOKEN}:x-oauth-basic@github.com/emilhein/blog.git~" _config.yml
+- git config --global user.name "Emil Hein via Travis Ci"
+- git config --global user.email "emilhein1@gmail.com"
+- sed -i "s/GH_TOKEN/${GH_TOKEN}/" _config.yml
 script:
 - npm run deploy

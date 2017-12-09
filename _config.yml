@@ -73,7 +73,13 @@ customize:
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
+# deploy:
+#   type: git
+#   repository: https://github.com/emilhein/emilhein.github.com.git
+#   branch: master
+
+
 deploy:
   type: git
-  repository: https://github.com/emilhein/emilhein.github.com.git
+  repo: https://GH_TOKEN@github.com/emilhein/emilhein.github.com.git
   branch: master
