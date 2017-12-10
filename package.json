@@ -6,7 +6,7 @@
     "start": "hexo clean && hexo generate && hexo server -o -w",
     "deployLocal": "hexo clean && hexo generate && hexo deploy",
     "generate": "hexo generate",
-    "deploy": "hexo deploy --silent"  
+    "deploy": "hexo generate && hexo deploy"  
   },
   "hexo": {
     "version": "3.4.2"

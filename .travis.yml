@@ -8,8 +8,6 @@ install:
  - npm install
  - npm run generate
 before_script:
-- git config --global user.name "Emil Hein via Travis Ci"
-- git config --global user.email "emilhein1@gmail.com"
 - sed -i "s/GH_TOKEN/${GH_TOKEN}/" _config.yml
 script:
 - npm run deploy
