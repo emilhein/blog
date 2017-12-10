@@ -83,5 +83,6 @@ deploy:
   type: git
   repo: https://GH_TOKEN@github.com/emilhein/emilhein.github.com.git
   branch: master
-  name: Emil Hein
+  name: Emil Hein Hexo
   email: emilhein1@gmail.com
+ 
