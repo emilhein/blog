@@ -54,5 +54,22 @@ const lodashWay = _.flowRight(function2, function1);
 console.log(lodashWay(2)) // I would like a house that is more than 2 m^2 big
 
 ```
+With libaries like ramda, you can do super cool function compositions, that uses functional programming when its best:
 
-Nothing left to say!
+```js
+const R = require('ramda');
+
+let diffFromNow = date => new Date(date) - new Date();
+let fromMiliTominutes = milli => R.divide(milli, (1000 * 60));
+let dateMoreThan1HourAgo = R.compose(
+    R.gte(R.__, 60),
+    Math.round,
+    fromMiliTominutes,
+    diffFromNow);
+
+let date = new Date();
+let diff = dateMoreThan1HourAgo(date.setHours(date.getHours() + 1));
+console.log(diff); // true
+```
+
+In the exmaple above i use some of the build in functions in Ramda, like compose (same af lodash flowright())

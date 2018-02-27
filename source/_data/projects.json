@@ -8,5 +8,10 @@
        "name":"Docker stuff",
        "url":"https://github.com/emilhein/docker-start",
        "desc":"My test and playground with docker"
+    },
+    {
+        "name": "Graph and Sequelize",
+        "url" : "https://github.com/emilhein/video-statistics",
+        "desc" : "A project that display incoming data on in graphs using Docker and Sequelize"
     }
 ]
