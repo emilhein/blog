@@ -1,17 +1,20 @@
-[
-    {
-       "name":"Hexo",
-       "url":"https://github.com/emilhein/blog",
-       "desc":"The framework and project for building this site"
+[{
+        "name": "Hexo",
+        "url": "https://github.com/emilhein/blog",
+        "desc": "The framework and project for building this site"
     },
     {
-       "name":"Docker stuff",
-       "url":"https://github.com/emilhein/docker-start",
-       "desc":"My test and playground with docker"
+        "name": "Docker stuff",
+        "url": "https://github.com/emilhein/docker-start",
+        "desc": "My test and playground with docker"
     },
     {
         "name": "Graph and Sequelize",
-        "url" : "https://github.com/emilhein/video-statistics",
-        "desc" : "A project that display incoming data on in graphs using Docker and Sequelize"
+        "url": "https://github.com/emilhein/video-statistics",
+        "desc": "A project that display incoming data on in graphs using Docker and Sequelize"
+    }, {
+        "name": "Serverless boilerplate",
+        "url": "https://github.com/emilhein/serverless",
+        "desc": "A project that contains some boilerplate code for serverless function, including test, CI/CD and examples"
     }
 ]
